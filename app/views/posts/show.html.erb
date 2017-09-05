@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row margin-left">
+    <h1><%= @post.title.titleize %></h1>
+    <p class="col-sm-10"><%= @post.content %>
+  </div>
+  <%= link_to 'Home', posts_path, class: 'btn btn-default' %>
+  <%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary' %>
+  <%= link_to 'Destroy', post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger' %>
+</div>

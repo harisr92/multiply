@@ -1,0 +1,6 @@
+<% if current_admin %>
+  <%= link_to 'Sign Out', destroy_admin_session_path %><br>
+  <%= link_to 'Posts', posts_path %>
+<% else %>
+  <%= link_to 'Admin Login', new_admin_session_path %>
+<% end %>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row margin-left">
+    <table>
+      <%= form_for @post do |form| %>
+        <tr>
+          <td>Title : </td><td><%= form.text_field :title, class: 'text' %></td>
+        </tr>
+        <tr>
+          <td>Content : </td>
+          <td><%= form.text_area :content, cols: 80, rows: 10 %></td>
+        </tr>
+        <tr>
+          <td><%= form.submit 'OK', class: 'btn btn-default' %></td>
+          <td><%= link_to 'Home', posts_path, class: 'btn btn-primary' %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
