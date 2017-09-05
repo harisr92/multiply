@@ -1,2 +1,4 @@
 <h1>Upload New Post</h1>
-<%= render 'form' %>
+<%= form_for @post do |form| %>
+  <%= render 'form', form: form %>
+<% end %>
